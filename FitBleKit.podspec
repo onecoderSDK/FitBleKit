@@ -4,7 +4,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "FitBleKit"
 
-  spec.version      = "1.0.1"
+  spec.version      = "1.0.2"
 
   spec.summary      = "Onecoder Ble Framework."
 
@@ -20,9 +20,9 @@ Pod::Spec.new do |spec|
 
   spec.platform     = :ios, "11.0"
 
-  spec.source       = { :git => "https://github.com/onecoderSDK/FitBleKit.git", :tag => "1.0.1" }
+  spec.source       = { :git => "https://github.com/onecoderSDK/FitBleKit.git", :tag => spec.version }
 
-  spec.source_files = "FitBleKit/**/*.{h,m}"
+  spec.source_files = "FitBleKit/**/*.{h,m,c}"
 
   spec.public_header_files = "FitBleKit/KitHeader/FitBleKit.h"
 

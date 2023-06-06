@@ -1,0 +1,6 @@
+framework module FitBleKit {
+  umbrella header "FitBleKit.h"
+
+  export *
+  module * { export * }
+}

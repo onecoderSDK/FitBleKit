@@ -1,0 +1,1021 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		180E663B22608D3A00C59786 /* ShowTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 180E663A22608D3A00C59786 /* ShowTools.m */; };
+		180E663E22617B6600C59786 /* BellListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180E663D22617B6600C59786 /* BellListViewController.m */; };
+		1818499821EC886300BFE66E /* DeviceClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1818499721EC886300BFE66E /* DeviceClass.m */; };
+		1818499B21EDCF0F00BFE66E /* img_choose.png in Resources */ = {isa = PBXBuildFile; fileRef = 1818499A21EDCF0F00BFE66E /* img_choose.png */; };
+		181E5E03212A55490062F58E /* Hub900ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E5E02212A55490062F58E /* Hub900ViewController.m */; };
+		181E5E06212A8F130062F58E /* HubParamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E5E05212A8F130062F58E /* HubParamViewController.m */; };
+		181E5E09212AB4AB0062F58E /* HubListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E5E08212AB4AB0062F58E /* HubListViewController.m */; };
+		185C7B562060EB0D001A7038 /* NewBandListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C7B552060EB0D001A7038 /* NewBandListViewController.m */; };
+		1865EC6D1FBBE71D00AB7585 /* BindDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1865EC661FBBE71D00AB7585 /* BindDeviceViewController.m */; };
+		1865EC6E1FBBE71D00AB7585 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1865EC691FBBE71D00AB7585 /* ViewController.m */; };
+		1865EC6F1FBBE71D00AB7585 /* NewBandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1865EC6C1FBBE71D00AB7585 /* NewBandViewController.m */; };
+		186B3261233B37080070F9DF /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186B325F233B37070070F9DF /* BaseViewController.m */; };
+		186DDE031FC03A61001EB095 /* NewScaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186DDE021FC03A61001EB095 /* NewScaleViewController.m */; };
+		1884F6971FC54C2A00D7C079 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1884F6951FC54C2A00D7C079 /* HistoryViewController.m */; };
+		1884F6981FC54C2A00D7C079 /* SetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1884F6961FC54C2A00D7C079 /* SetViewController.m */; };
+		1884F69B1FC54C3C00D7C079 /* RosaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1884F69A1FC54C3C00D7C079 /* RosaryViewController.m */; };
+		188914AF21C0DF2800913CA7 /* CFileOperate.m in Sources */ = {isa = PBXBuildFile; fileRef = 188914AE21C0DF2800913CA7 /* CFileOperate.m */; };
+		18A1E65C1FA8524100319641 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A1E6571FA8524100319641 /* AppDelegate.m */; };
+		18ADB86C206A24900010CBEE /* ArmBandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ADB86B206A24900010CBEE /* ArmBandViewController.m */; };
+		18AF933F20720C3C0022CDAF /* KettleBellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AF933E20720C3C0022CDAF /* KettleBellViewController.m */; };
+		18B142301FC2807D00D80C73 /* SkippingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B1422F1FC2807D00D80C73 /* SkippingViewController.m */; };
+		18B142331FC2808F00D80C73 /* CadenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B142321FC2808F00D80C73 /* CadenceViewController.m */; };
+		18B1423D1FC2D34100D80C73 /* OldScaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B1423C1FC2D34100D80C73 /* OldScaleViewController.m */; };
+		18B5B17A2175C6AA00821545 /* FistPowerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B5B1792175C6AA00821545 /* FistPowerViewController.m */; };
+		18B8373B234EDDB9002367C5 /* BroadcastingScaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B8373A234EDDB9002367C5 /* BroadcastingScaleViewController.m */; };
+		18BA1FAC1FC6C92D00144931 /* HeartRateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA1FAB1FC6C92D00144931 /* HeartRateViewController.m */; };
+		18BC844D1FBA9B8700B31BC3 /* img_app_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 18BC844C1FBA9B8700B31BC3 /* img_app_back.png */; };
+		18BC844F1FBA9BA900B31BC3 /* img_app_next.png in Resources */ = {isa = PBXBuildFile; fileRef = 18BC844E1FBA9BA900B31BC3 /* img_app_next.png */; };
+		18C058FB20C8D99800952955 /* BikeComputerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C058FA20C8D99800952955 /* BikeComputerViewController.m */; };
+		18C1E6E01FC42ADC00DC4C22 /* OldBandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C1E6DF1FC42ADC00DC4C22 /* OldBandViewController.m */; };
+		18C63B1D20F5AF190098D8C8 /* SportListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C63B1C20F5AF190098D8C8 /* SportListViewController.m */; };
+		18CE0EC920EDED88007BB754 /* HubConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE0EC820EDED88007BB754 /* HubConfigViewController.m */; };
+		18CE0ECC20EE09A1007BB754 /* WiFiListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE0ECB20EE09A1007BB754 /* WiFiListViewController.m */; };
+		18EBF47D1FA84E710024790B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18EBF47B1FA84E710024790B /* Main.storyboard */; };
+		18EBF47F1FA84E710024790B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18EBF47E1FA84E710024790B /* Assets.xcassets */; };
+		18EBF4821FA84E710024790B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18EBF4801FA84E710024790B /* LaunchScreen.storyboard */; };
+		18EBF4851FA84E710024790B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EBF4841FA84E710024790B /* main.m */; };
+		FE053A61290D1FA5008AE1D3 /* HeartZoneView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE053A60290D1FA5008AE1D3 /* HeartZoneView.m */; };
+		FE413E4B28B4D7BF00C2B8E3 /* FightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE413E4A28B4D7BF00C2B8E3 /* FightViewController.m */; };
+		FE4E13EE28B76A0B00D54B13 /* PYToolColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4E13D428B76A0B00D54B13 /* PYToolColor.m */; };
+		FE4E13F128B76A0B00D54B13 /* PYToolString.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4E13DD28B76A0B00D54B13 /* PYToolString.m */; };
+		FE4E13F528B7787100D54B13 /* fight.png in Resources */ = {isa = PBXBuildFile; fileRef = FE4E13F428B7787100D54B13 /* fight.png */; };
+		FE9806DC28B86EFA007ACF0C /* SandbagView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9806DB28B86EFA007ACF0C /* SandbagView.m */; };
+		FEA256B825B82E6E0026C4C1 /* ECGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA256B725B82E6E0026C4C1 /* ECGViewController.m */; };
+		FEA7C6A7265CF746000C945D /* RunningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA7C6A6265CF746000C945D /* RunningViewController.m */; };
+		FEC3E6662A330913009EEB30 /* FitBleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC3E6652A330913009EEB30 /* FitBleKit.framework */; };
+		FEC54177269BDAC300180655 /* PPGDFUViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC54176269BDAC300180655 /* PPGDFUViewController.m */; };
+		FEC5417A269C3E4200180655 /* PPGFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC54179269C3E4200180655 /* PPGFileViewController.m */; };
+		FEC600BF29ADE8A100995A16 /* ErgometerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC600BE29ADE8A100995A16 /* ErgometerViewController.m */; };
+		FECC7BAC27BF364C00A2B0BC /* FileEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FECC7BA927BF364C00A2B0BC /* FileEditViewController.m */; };
+		FECC7BAD27BF364C00A2B0BC /* ChooseTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = FECC7BAB27BF364C00A2B0BC /* ChooseTabView.m */; };
+		FECC7BB127BF38C700A2B0BC /* PYToolUIAdapt.m in Sources */ = {isa = PBXBuildFile; fileRef = FECC7BB027BF38C700A2B0BC /* PYToolUIAdapt.m */; };
+		FED0EAF62638163900EDAD93 /* FunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FED0EAF52638163900EDAD93 /* FunctionViewController.m */; };
+		FEDD20BE25A439DF007FF057 /* PowerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDD20BD25A439DF007FF057 /* PowerViewController.m */; };
+		FEE23E38290FA83C00FAB3A1 /* icon_20@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEE23E23290FA83B00FAB3A1 /* icon_20@3x.png */; };
+		FEE23E39290FA83C00FAB3A1 /* icon_29.png in Resources */ = {isa = PBXBuildFile; fileRef = FEE23E24290FA83B00FAB3A1 /* icon_29.png */; };
+		FEE23E3A290FA83C00FAB3A1 /* icon_29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEE23E25290FA83B00FAB3A1 /* icon_29@3x.png */; };
+		FEE23E3B290FA83C00FAB3A1 /* icon_20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEE23E26290FA83B00FAB3A1 /* icon_20@2x.png */; };
+		FEE23E3C290FA83C00FAB3A1 /* icon_60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEE23E27290FA83B00FAB3A1 /* icon_60@3x.png */; };
+		FEE23E3D290FA83C00FAB3A1 /* icon_167.png in Resources */ = {isa = PBXBuildFile; fileRef = FEE23E28290FA83B00FAB3A1 /* icon_167.png */; };
+		FEE23E3E290FA83C00FAB3A1 /* icon_29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEE23E29290FA83B00FAB3A1 /* icon_29@2x.png */; };
+		FEE23E3F290FA83C00FAB3A1 /* icon_60.png in Resources */ = {isa = PBXBuildFile; fileRef = FEE23E2A290FA83B00FAB3A1 /* icon_60.png */; };
+		FEE23E40290FA83C00FAB3A1 /* icon_40.png in Resources */ = {isa = PBXBuildFile; fileRef = FEE23E2B290FA83B00FAB3A1 /* icon_40.png */; };
+		FEE23E41290FA83C00FAB3A1 /* icon_57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEE23E2C290FA83B00FAB3A1 /* icon_57@2x.png */; };
+		FEE23E42290FA83C00FAB3A1 /* icon_512.png in Resources */ = {isa = PBXBuildFile; fileRef = FEE23E2D290FA83B00FAB3A1 /* icon_512.png */; };
+		FEE23E43290FA83C00FAB3A1 /* icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = FEE23E2E290FA83B00FAB3A1 /* icon_57.png */; };
+		FEE23E44290FA83C00FAB3A1 /* icon_60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEE23E2F290FA83B00FAB3A1 /* icon_60@2x.png */; };
+		FEE23E45290FA83C00FAB3A1 /* icon_76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEE23E30290FA83B00FAB3A1 /* icon_76@2x.png */; };
+		FEE23E46290FA83C00FAB3A1 /* icon_1024.png in Resources */ = {isa = PBXBuildFile; fileRef = FEE23E31290FA83B00FAB3A1 /* icon_1024.png */; };
+		FEE23E47290FA83C00FAB3A1 /* icon_76.png in Resources */ = {isa = PBXBuildFile; fileRef = FEE23E32290FA83B00FAB3A1 /* icon_76.png */; };
+		FEE23E48290FA83C00FAB3A1 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FEE23E33290FA83C00FAB3A1 /* icon.png */; };
+		FEE23E49290FA83C00FAB3A1 /* icon_20.png in Resources */ = {isa = PBXBuildFile; fileRef = FEE23E34290FA83C00FAB3A1 /* icon_20.png */; };
+		FEE23E4A290FA83C00FAB3A1 /* icon_40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEE23E35290FA83C00FAB3A1 /* icon_40@3x.png */; };
+		FEE23E4B290FA83C00FAB3A1 /* icon_57@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEE23E36290FA83C00FAB3A1 /* icon_57@3x.png */; };
+		FEE23E4C290FA83C00FAB3A1 /* icon_40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEE23E37290FA83C00FAB3A1 /* icon_40@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FE061E48272FDCD20089FB0F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		180E663922608D3A00C59786 /* ShowTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowTools.h; sourceTree = "<group>"; };
+		180E663A22608D3A00C59786 /* ShowTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowTools.m; sourceTree = "<group>"; };
+		180E663C22617B6600C59786 /* BellListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BellListViewController.h; sourceTree = "<group>"; };
+		180E663D22617B6600C59786 /* BellListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BellListViewController.m; sourceTree = "<group>"; };
+		1818499621EC886300BFE66E /* DeviceClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceClass.h; sourceTree = "<group>"; };
+		1818499721EC886300BFE66E /* DeviceClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceClass.m; sourceTree = "<group>"; };
+		1818499A21EDCF0F00BFE66E /* img_choose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_choose.png; sourceTree = "<group>"; };
+		181E5E01212A55490062F58E /* Hub900ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hub900ViewController.h; sourceTree = "<group>"; };
+		181E5E02212A55490062F58E /* Hub900ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hub900ViewController.m; sourceTree = "<group>"; };
+		181E5E04212A8F130062F58E /* HubParamViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HubParamViewController.h; sourceTree = "<group>"; };
+		181E5E05212A8F130062F58E /* HubParamViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HubParamViewController.m; sourceTree = "<group>"; };
+		181E5E07212AB4AB0062F58E /* HubListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HubListViewController.h; sourceTree = "<group>"; };
+		181E5E08212AB4AB0062F58E /* HubListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HubListViewController.m; sourceTree = "<group>"; };
+		185C7B542060EB0D001A7038 /* NewBandListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewBandListViewController.h; sourceTree = "<group>"; };
+		185C7B552060EB0D001A7038 /* NewBandListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewBandListViewController.m; sourceTree = "<group>"; };
+		1865EC651FBBE71D00AB7585 /* BindDeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindDeviceViewController.h; sourceTree = "<group>"; };
+		1865EC661FBBE71D00AB7585 /* BindDeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindDeviceViewController.m; sourceTree = "<group>"; };
+		1865EC681FBBE71D00AB7585 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1865EC691FBBE71D00AB7585 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1865EC6B1FBBE71D00AB7585 /* NewBandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewBandViewController.h; sourceTree = "<group>"; };
+		1865EC6C1FBBE71D00AB7585 /* NewBandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewBandViewController.m; sourceTree = "<group>"; };
+		186B325F233B37070070F9DF /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		186B3260233B37070070F9DF /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		186DDE011FC03A61001EB095 /* NewScaleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewScaleViewController.h; sourceTree = "<group>"; };
+		186DDE021FC03A61001EB095 /* NewScaleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewScaleViewController.m; sourceTree = "<group>"; };
+		1884F6931FC54C2A00D7C079 /* SetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetViewController.h; sourceTree = "<group>"; };
+		1884F6941FC54C2A00D7C079 /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
+		1884F6951FC54C2A00D7C079 /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
+		1884F6961FC54C2A00D7C079 /* SetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetViewController.m; sourceTree = "<group>"; };
+		1884F6991FC54C3C00D7C079 /* RosaryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RosaryViewController.h; sourceTree = "<group>"; };
+		1884F69A1FC54C3C00D7C079 /* RosaryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RosaryViewController.m; sourceTree = "<group>"; };
+		188914AD21C0DF2800913CA7 /* CFileOperate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFileOperate.h; sourceTree = "<group>"; };
+		188914AE21C0DF2800913CA7 /* CFileOperate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFileOperate.m; sourceTree = "<group>"; };
+		18A1761D1FAACD8C00F5BABB /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		18A1E6561FA8524100319641 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18A1E6571FA8524100319641 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18ADB86A206A24900010CBEE /* ArmBandViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArmBandViewController.h; sourceTree = "<group>"; };
+		18ADB86B206A24900010CBEE /* ArmBandViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArmBandViewController.m; sourceTree = "<group>"; };
+		18AF933D20720C3C0022CDAF /* KettleBellViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KettleBellViewController.h; sourceTree = "<group>"; };
+		18AF933E20720C3C0022CDAF /* KettleBellViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KettleBellViewController.m; sourceTree = "<group>"; };
+		18B1422E1FC2807D00D80C73 /* SkippingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SkippingViewController.h; sourceTree = "<group>"; };
+		18B1422F1FC2807D00D80C73 /* SkippingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkippingViewController.m; sourceTree = "<group>"; };
+		18B142311FC2808F00D80C73 /* CadenceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CadenceViewController.h; sourceTree = "<group>"; };
+		18B142321FC2808F00D80C73 /* CadenceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CadenceViewController.m; sourceTree = "<group>"; };
+		18B1423B1FC2D34100D80C73 /* OldScaleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OldScaleViewController.h; sourceTree = "<group>"; };
+		18B1423C1FC2D34100D80C73 /* OldScaleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OldScaleViewController.m; sourceTree = "<group>"; };
+		18B5B1782175C6AA00821545 /* FistPowerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FistPowerViewController.h; sourceTree = "<group>"; };
+		18B5B1792175C6AA00821545 /* FistPowerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FistPowerViewController.m; sourceTree = "<group>"; };
+		18B83739234EDDB9002367C5 /* BroadcastingScaleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BroadcastingScaleViewController.h; sourceTree = "<group>"; };
+		18B8373A234EDDB9002367C5 /* BroadcastingScaleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BroadcastingScaleViewController.m; sourceTree = "<group>"; };
+		18BA1FAA1FC6C92D00144931 /* HeartRateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeartRateViewController.h; sourceTree = "<group>"; };
+		18BA1FAB1FC6C92D00144931 /* HeartRateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeartRateViewController.m; sourceTree = "<group>"; };
+		18BC844C1FBA9B8700B31BC3 /* img_app_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_app_back.png; sourceTree = "<group>"; };
+		18BC844E1FBA9BA900B31BC3 /* img_app_next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_app_next.png; sourceTree = "<group>"; };
+		18C058F920C8D99800952955 /* BikeComputerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BikeComputerViewController.h; sourceTree = "<group>"; };
+		18C058FA20C8D99800952955 /* BikeComputerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BikeComputerViewController.m; sourceTree = "<group>"; };
+		18C1E6DE1FC42ADC00DC4C22 /* OldBandViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OldBandViewController.h; sourceTree = "<group>"; };
+		18C1E6DF1FC42ADC00DC4C22 /* OldBandViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OldBandViewController.m; sourceTree = "<group>"; };
+		18C63B1B20F5AF190098D8C8 /* SportListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SportListViewController.h; sourceTree = "<group>"; };
+		18C63B1C20F5AF190098D8C8 /* SportListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SportListViewController.m; sourceTree = "<group>"; };
+		18CE0EC720EDED88007BB754 /* HubConfigViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HubConfigViewController.h; sourceTree = "<group>"; };
+		18CE0EC820EDED88007BB754 /* HubConfigViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HubConfigViewController.m; sourceTree = "<group>"; };
+		18CE0ECA20EE09A1007BB754 /* WiFiListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WiFiListViewController.h; sourceTree = "<group>"; };
+		18CE0ECB20EE09A1007BB754 /* WiFiListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WiFiListViewController.m; sourceTree = "<group>"; };
+		18EBF4721FA84E710024790B /* FitBleKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitBleKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18EBF47C1FA84E710024790B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18EBF47E1FA84E710024790B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18EBF4811FA84E710024790B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18EBF4831FA84E710024790B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18EBF4841FA84E710024790B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FE053A5F290D1FA5008AE1D3 /* HeartZoneView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeartZoneView.h; sourceTree = "<group>"; };
+		FE053A60290D1FA5008AE1D3 /* HeartZoneView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeartZoneView.m; sourceTree = "<group>"; };
+		FE413E4928B4D7BF00C2B8E3 /* FightViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FightViewController.h; sourceTree = "<group>"; };
+		FE413E4A28B4D7BF00C2B8E3 /* FightViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FightViewController.m; sourceTree = "<group>"; };
+		FE4E13D428B76A0B00D54B13 /* PYToolColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYToolColor.m; sourceTree = "<group>"; };
+		FE4E13D528B76A0B00D54B13 /* PYToolColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYToolColor.h; sourceTree = "<group>"; };
+		FE4E13DD28B76A0B00D54B13 /* PYToolString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYToolString.m; sourceTree = "<group>"; };
+		FE4E13DE28B76A0B00D54B13 /* PYToolString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYToolString.h; sourceTree = "<group>"; };
+		FE4E13F428B7787100D54B13 /* fight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fight.png; sourceTree = "<group>"; };
+		FE9806DA28B86EFA007ACF0C /* SandbagView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SandbagView.h; sourceTree = "<group>"; };
+		FE9806DB28B86EFA007ACF0C /* SandbagView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SandbagView.m; sourceTree = "<group>"; };
+		FEA256B625B82E6E0026C4C1 /* ECGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECGViewController.h; sourceTree = "<group>"; };
+		FEA256B725B82E6E0026C4C1 /* ECGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECGViewController.m; sourceTree = "<group>"; };
+		FEA7C6A5265CF746000C945D /* RunningViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunningViewController.h; sourceTree = "<group>"; };
+		FEA7C6A6265CF746000C945D /* RunningViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunningViewController.m; sourceTree = "<group>"; };
+		FEC3E6652A330913009EEB30 /* FitBleKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FitBleKit.framework; sourceTree = "<group>"; };
+		FEC54175269BDAC300180655 /* PPGDFUViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPGDFUViewController.h; sourceTree = "<group>"; };
+		FEC54176269BDAC300180655 /* PPGDFUViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPGDFUViewController.m; sourceTree = "<group>"; };
+		FEC54178269C3E4200180655 /* PPGFileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPGFileViewController.h; sourceTree = "<group>"; };
+		FEC54179269C3E4200180655 /* PPGFileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPGFileViewController.m; sourceTree = "<group>"; };
+		FEC600BD29ADE8A100995A16 /* ErgometerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ErgometerViewController.h; sourceTree = "<group>"; };
+		FEC600BE29ADE8A100995A16 /* ErgometerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ErgometerViewController.m; sourceTree = "<group>"; };
+		FECC7BA827BF364C00A2B0BC /* ChooseTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseTabView.h; sourceTree = "<group>"; };
+		FECC7BA927BF364C00A2B0BC /* FileEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileEditViewController.m; sourceTree = "<group>"; };
+		FECC7BAA27BF364C00A2B0BC /* FileEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileEditViewController.h; sourceTree = "<group>"; };
+		FECC7BAB27BF364C00A2B0BC /* ChooseTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseTabView.m; sourceTree = "<group>"; };
+		FECC7BAF27BF38C700A2B0BC /* PYToolUIAdapt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYToolUIAdapt.h; sourceTree = "<group>"; };
+		FECC7BB027BF38C700A2B0BC /* PYToolUIAdapt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYToolUIAdapt.m; sourceTree = "<group>"; };
+		FED0EAF42638163900EDAD93 /* FunctionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunctionViewController.h; sourceTree = "<group>"; };
+		FED0EAF52638163900EDAD93 /* FunctionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunctionViewController.m; sourceTree = "<group>"; };
+		FEDD20BC25A439DF007FF057 /* PowerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PowerViewController.h; sourceTree = "<group>"; };
+		FEDD20BD25A439DF007FF057 /* PowerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PowerViewController.m; sourceTree = "<group>"; };
+		FEE23E23290FA83B00FAB3A1 /* icon_20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_20@3x.png"; sourceTree = "<group>"; };
+		FEE23E24290FA83B00FAB3A1 /* icon_29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_29.png; sourceTree = "<group>"; };
+		FEE23E25290FA83B00FAB3A1 /* icon_29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_29@3x.png"; sourceTree = "<group>"; };
+		FEE23E26290FA83B00FAB3A1 /* icon_20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_20@2x.png"; sourceTree = "<group>"; };
+		FEE23E27290FA83B00FAB3A1 /* icon_60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_60@3x.png"; sourceTree = "<group>"; };
+		FEE23E28290FA83B00FAB3A1 /* icon_167.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_167.png; sourceTree = "<group>"; };
+		FEE23E29290FA83B00FAB3A1 /* icon_29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_29@2x.png"; sourceTree = "<group>"; };
+		FEE23E2A290FA83B00FAB3A1 /* icon_60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_60.png; sourceTree = "<group>"; };
+		FEE23E2B290FA83B00FAB3A1 /* icon_40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_40.png; sourceTree = "<group>"; };
+		FEE23E2C290FA83B00FAB3A1 /* icon_57@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_57@2x.png"; sourceTree = "<group>"; };
+		FEE23E2D290FA83B00FAB3A1 /* icon_512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_512.png; sourceTree = "<group>"; };
+		FEE23E2E290FA83B00FAB3A1 /* icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_57.png; sourceTree = "<group>"; };
+		FEE23E2F290FA83B00FAB3A1 /* icon_60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_60@2x.png"; sourceTree = "<group>"; };
+		FEE23E30290FA83B00FAB3A1 /* icon_76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_76@2x.png"; sourceTree = "<group>"; };
+		FEE23E31290FA83B00FAB3A1 /* icon_1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_1024.png; sourceTree = "<group>"; };
+		FEE23E32290FA83B00FAB3A1 /* icon_76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_76.png; sourceTree = "<group>"; };
+		FEE23E33290FA83C00FAB3A1 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		FEE23E34290FA83C00FAB3A1 /* icon_20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_20.png; sourceTree = "<group>"; };
+		FEE23E35290FA83C00FAB3A1 /* icon_40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_40@3x.png"; sourceTree = "<group>"; };
+		FEE23E36290FA83C00FAB3A1 /* icon_57@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_57@3x.png"; sourceTree = "<group>"; };
+		FEE23E37290FA83C00FAB3A1 /* icon_40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_40@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18EBF46F1FA84E710024790B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEC3E6662A330913009EEB30 /* FitBleKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1865EC631FBBE71D00AB7585 /* NewScale */ = {
+			isa = PBXGroup;
+			children = (
+				186DDE011FC03A61001EB095 /* NewScaleViewController.h */,
+				186DDE021FC03A61001EB095 /* NewScaleViewController.m */,
+			);
+			path = NewScale;
+			sourceTree = "<group>";
+		};
+		1865EC641FBBE71D00AB7585 /* ScanDevice */ = {
+			isa = PBXGroup;
+			children = (
+				1865EC651FBBE71D00AB7585 /* BindDeviceViewController.h */,
+				1865EC661FBBE71D00AB7585 /* BindDeviceViewController.m */,
+			);
+			path = ScanDevice;
+			sourceTree = "<group>";
+		};
+		1865EC671FBBE71D00AB7585 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1865EC681FBBE71D00AB7585 /* ViewController.h */,
+				1865EC691FBBE71D00AB7585 /* ViewController.m */,
+				1818499621EC886300BFE66E /* DeviceClass.h */,
+				1818499721EC886300BFE66E /* DeviceClass.m */,
+				180E663922608D3A00C59786 /* ShowTools.h */,
+				180E663A22608D3A00C59786 /* ShowTools.m */,
+				186B3260233B37070070F9DF /* BaseViewController.h */,
+				186B325F233B37070070F9DF /* BaseViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1865EC6A1FBBE71D00AB7585 /* NewBand */ = {
+			isa = PBXGroup;
+			children = (
+				1865EC6B1FBBE71D00AB7585 /* NewBandViewController.h */,
+				1865EC6C1FBBE71D00AB7585 /* NewBandViewController.m */,
+				185C7B542060EB0D001A7038 /* NewBandListViewController.h */,
+				185C7B552060EB0D001A7038 /* NewBandListViewController.m */,
+			);
+			path = NewBand;
+			sourceTree = "<group>";
+		};
+		1884F6921FC54C0800D7C079 /* Rosary */ = {
+			isa = PBXGroup;
+			children = (
+				1884F6991FC54C3C00D7C079 /* RosaryViewController.h */,
+				1884F69A1FC54C3C00D7C079 /* RosaryViewController.m */,
+				1884F6941FC54C2A00D7C079 /* HistoryViewController.h */,
+				1884F6951FC54C2A00D7C079 /* HistoryViewController.m */,
+				1884F6931FC54C2A00D7C079 /* SetViewController.h */,
+				1884F6961FC54C2A00D7C079 /* SetViewController.m */,
+			);
+			path = Rosary;
+			sourceTree = "<group>";
+		};
+		188914AC21C0DF2800913CA7 /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				188914AD21C0DF2800913CA7 /* CFileOperate.h */,
+				188914AE21C0DF2800913CA7 /* CFileOperate.m */,
+			);
+			path = FileManager;
+			sourceTree = "<group>";
+		};
+		18A1761C1FAACD8C00F5BABB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18A1761D1FAACD8C00F5BABB /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18A1E6541FA8524100319641 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18EBF4831FA84E710024790B /* Info.plist */,
+				18EBF4841FA84E710024790B /* main.m */,
+				18EBF47B1FA84E710024790B /* Main.storyboard */,
+				18EBF47E1FA84E710024790B /* Assets.xcassets */,
+				18EBF4801FA84E710024790B /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18A1E6551FA8524100319641 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				18A1E6561FA8524100319641 /* AppDelegate.h */,
+				18A1E6571FA8524100319641 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		18A1E6591FA8524100319641 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18ADB869206A24740010CBEE /* ArmBand */,
+				FEC600BC29ADE88C00995A16 /* Ergometer */,
+				FE413E4828B4D78800C2B8E3 /* Fight */,
+				FEC54174269BDA9D00180655 /* PPGDFU */,
+				FEA7C6A4265CF729000C945D /* Running */,
+				FED0EAF32638161500EDAD93 /* BleFunctuon */,
+				FEA256B525B82E540026C4C1 /* ECG */,
+				FEDD20BB25A439C1007FF057 /* Power */,
+				18B83738234EDDA2002367C5 /* BroadcastingScale */,
+				18B5B1772175C69600821545 /* Boxing */,
+				18CE0EC620EDED70007BB754 /* HubConfig */,
+				18AF93362071DEB60022CDAF /* KettleBell */,
+				18C058F820C8D99800952955 /* BikeComputer */,
+				1884F6921FC54C0800D7C079 /* Rosary */,
+				18B1422D1FC2805F00D80C73 /* Skipping */,
+				18B1422C1FC2805F00D80C73 /* Cadence */,
+				18BA1FA91FC6C91900144931 /* HeartRate */,
+				1865EC631FBBE71D00AB7585 /* NewScale */,
+				18B1423A1FC2D32C00D80C73 /* OldScale */,
+				1865EC6A1FBBE71D00AB7585 /* NewBand */,
+				18C1E6DD1FC42AC600DC4C22 /* OldBand */,
+				1865EC641FBBE71D00AB7585 /* ScanDevice */,
+				1865EC671FBBE71D00AB7585 /* Main */,
+				FE4E13B728B76A0B00D54B13 /* PYAppTools */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		18ADB869206A24740010CBEE /* ArmBand */ = {
+			isa = PBXGroup;
+			children = (
+				18ADB86A206A24900010CBEE /* ArmBandViewController.h */,
+				18ADB86B206A24900010CBEE /* ArmBandViewController.m */,
+				FE053A5F290D1FA5008AE1D3 /* HeartZoneView.h */,
+				FE053A60290D1FA5008AE1D3 /* HeartZoneView.m */,
+			);
+			path = ArmBand;
+			sourceTree = "<group>";
+		};
+		18AF93362071DEB60022CDAF /* KettleBell */ = {
+			isa = PBXGroup;
+			children = (
+				18AF933D20720C3C0022CDAF /* KettleBellViewController.h */,
+				18AF933E20720C3C0022CDAF /* KettleBellViewController.m */,
+				180E663C22617B6600C59786 /* BellListViewController.h */,
+				180E663D22617B6600C59786 /* BellListViewController.m */,
+				18C63B1B20F5AF190098D8C8 /* SportListViewController.h */,
+				18C63B1C20F5AF190098D8C8 /* SportListViewController.m */,
+			);
+			path = KettleBell;
+			sourceTree = "<group>";
+		};
+		18B1422C1FC2805F00D80C73 /* Cadence */ = {
+			isa = PBXGroup;
+			children = (
+				18B142311FC2808F00D80C73 /* CadenceViewController.h */,
+				18B142321FC2808F00D80C73 /* CadenceViewController.m */,
+			);
+			path = Cadence;
+			sourceTree = "<group>";
+		};
+		18B1422D1FC2805F00D80C73 /* Skipping */ = {
+			isa = PBXGroup;
+			children = (
+				18B1422E1FC2807D00D80C73 /* SkippingViewController.h */,
+				18B1422F1FC2807D00D80C73 /* SkippingViewController.m */,
+			);
+			path = Skipping;
+			sourceTree = "<group>";
+		};
+		18B1423A1FC2D32C00D80C73 /* OldScale */ = {
+			isa = PBXGroup;
+			children = (
+				18B1423B1FC2D34100D80C73 /* OldScaleViewController.h */,
+				18B1423C1FC2D34100D80C73 /* OldScaleViewController.m */,
+			);
+			path = OldScale;
+			sourceTree = "<group>";
+		};
+		18B5B1772175C69600821545 /* Boxing */ = {
+			isa = PBXGroup;
+			children = (
+				18B5B1782175C6AA00821545 /* FistPowerViewController.h */,
+				18B5B1792175C6AA00821545 /* FistPowerViewController.m */,
+				FECC7BAA27BF364C00A2B0BC /* FileEditViewController.h */,
+				FECC7BA927BF364C00A2B0BC /* FileEditViewController.m */,
+				FECC7BA827BF364C00A2B0BC /* ChooseTabView.h */,
+				FECC7BAB27BF364C00A2B0BC /* ChooseTabView.m */,
+			);
+			path = Boxing;
+			sourceTree = "<group>";
+		};
+		18B83738234EDDA2002367C5 /* BroadcastingScale */ = {
+			isa = PBXGroup;
+			children = (
+				18B83739234EDDB9002367C5 /* BroadcastingScaleViewController.h */,
+				18B8373A234EDDB9002367C5 /* BroadcastingScaleViewController.m */,
+			);
+			path = BroadcastingScale;
+			sourceTree = "<group>";
+		};
+		18BA1FA91FC6C91900144931 /* HeartRate */ = {
+			isa = PBXGroup;
+			children = (
+				18BA1FAA1FC6C92D00144931 /* HeartRateViewController.h */,
+				18BA1FAB1FC6C92D00144931 /* HeartRateViewController.m */,
+			);
+			path = HeartRate;
+			sourceTree = "<group>";
+		};
+		18BC844B1FBA9B8700B31BC3 /* AppImg */ = {
+			isa = PBXGroup;
+			children = (
+				FEE23DF8290FA82F00FAB3A1 /* Icon */,
+				FE4E13F428B7787100D54B13 /* fight.png */,
+				18BC844C1FBA9B8700B31BC3 /* img_app_back.png */,
+				18BC844E1FBA9BA900B31BC3 /* img_app_next.png */,
+				1818499A21EDCF0F00BFE66E /* img_choose.png */,
+			);
+			path = AppImg;
+			sourceTree = "<group>";
+		};
+		18C058F820C8D99800952955 /* BikeComputer */ = {
+			isa = PBXGroup;
+			children = (
+				18C058F920C8D99800952955 /* BikeComputerViewController.h */,
+				18C058FA20C8D99800952955 /* BikeComputerViewController.m */,
+			);
+			path = BikeComputer;
+			sourceTree = "<group>";
+		};
+		18C1E6DD1FC42AC600DC4C22 /* OldBand */ = {
+			isa = PBXGroup;
+			children = (
+				18C1E6DE1FC42ADC00DC4C22 /* OldBandViewController.h */,
+				18C1E6DF1FC42ADC00DC4C22 /* OldBandViewController.m */,
+				188914AC21C0DF2800913CA7 /* FileManager */,
+			);
+			path = OldBand;
+			sourceTree = "<group>";
+		};
+		18CE0EC620EDED70007BB754 /* HubConfig */ = {
+			isa = PBXGroup;
+			children = (
+				181E5E07212AB4AB0062F58E /* HubListViewController.h */,
+				181E5E08212AB4AB0062F58E /* HubListViewController.m */,
+				18CE0EC720EDED88007BB754 /* HubConfigViewController.h */,
+				18CE0EC820EDED88007BB754 /* HubConfigViewController.m */,
+				181E5E01212A55490062F58E /* Hub900ViewController.h */,
+				181E5E02212A55490062F58E /* Hub900ViewController.m */,
+				18CE0ECA20EE09A1007BB754 /* WiFiListViewController.h */,
+				18CE0ECB20EE09A1007BB754 /* WiFiListViewController.m */,
+				181E5E04212A8F130062F58E /* HubParamViewController.h */,
+				181E5E05212A8F130062F58E /* HubParamViewController.m */,
+			);
+			path = HubConfig;
+			sourceTree = "<group>";
+		};
+		18EBF4691FA84E710024790B = {
+			isa = PBXGroup;
+			children = (
+				18EBF4741FA84E710024790B /* FitBleKitDemo */,
+				18A1761C1FAACD8C00F5BABB /* Frameworks */,
+				18EBF4731FA84E710024790B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18EBF4731FA84E710024790B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18EBF4721FA84E710024790B /* FitBleKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18EBF4741FA84E710024790B /* FitBleKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				18A1E6591FA8524100319641 /* ViewController */,
+				18A1E6551FA8524100319641 /* AppDelegate */,
+				18BC844B1FBA9B8700B31BC3 /* AppImg */,
+				18A1E6541FA8524100319641 /* Supporting Files */,
+				FEC3E6652A330913009EEB30 /* FitBleKit.framework */,
+			);
+			path = FitBleKitDemo;
+			sourceTree = "<group>";
+		};
+		FE413E4828B4D78800C2B8E3 /* Fight */ = {
+			isa = PBXGroup;
+			children = (
+				FE413E4928B4D7BF00C2B8E3 /* FightViewController.h */,
+				FE413E4A28B4D7BF00C2B8E3 /* FightViewController.m */,
+				FE9806DA28B86EFA007ACF0C /* SandbagView.h */,
+				FE9806DB28B86EFA007ACF0C /* SandbagView.m */,
+			);
+			path = Fight;
+			sourceTree = "<group>";
+		};
+		FE4E13B728B76A0B00D54B13 /* PYAppTools */ = {
+			isa = PBXGroup;
+			children = (
+				FECC7BAE27BF38C700A2B0BC /* ToolUIAdapt */,
+				FE4E13D328B76A0B00D54B13 /* ToolColor */,
+				FE4E13DC28B76A0B00D54B13 /* ToolString */,
+			);
+			path = PYAppTools;
+			sourceTree = "<group>";
+		};
+		FE4E13D328B76A0B00D54B13 /* ToolColor */ = {
+			isa = PBXGroup;
+			children = (
+				FE4E13D428B76A0B00D54B13 /* PYToolColor.m */,
+				FE4E13D528B76A0B00D54B13 /* PYToolColor.h */,
+			);
+			path = ToolColor;
+			sourceTree = "<group>";
+		};
+		FE4E13DC28B76A0B00D54B13 /* ToolString */ = {
+			isa = PBXGroup;
+			children = (
+				FE4E13DD28B76A0B00D54B13 /* PYToolString.m */,
+				FE4E13DE28B76A0B00D54B13 /* PYToolString.h */,
+			);
+			path = ToolString;
+			sourceTree = "<group>";
+		};
+		FEA256B525B82E540026C4C1 /* ECG */ = {
+			isa = PBXGroup;
+			children = (
+				FEA256B625B82E6E0026C4C1 /* ECGViewController.h */,
+				FEA256B725B82E6E0026C4C1 /* ECGViewController.m */,
+			);
+			path = ECG;
+			sourceTree = "<group>";
+		};
+		FEA7C6A4265CF729000C945D /* Running */ = {
+			isa = PBXGroup;
+			children = (
+				FEA7C6A5265CF746000C945D /* RunningViewController.h */,
+				FEA7C6A6265CF746000C945D /* RunningViewController.m */,
+			);
+			path = Running;
+			sourceTree = "<group>";
+		};
+		FEC54174269BDA9D00180655 /* PPGDFU */ = {
+			isa = PBXGroup;
+			children = (
+				FEC54175269BDAC300180655 /* PPGDFUViewController.h */,
+				FEC54176269BDAC300180655 /* PPGDFUViewController.m */,
+				FEC54178269C3E4200180655 /* PPGFileViewController.h */,
+				FEC54179269C3E4200180655 /* PPGFileViewController.m */,
+			);
+			path = PPGDFU;
+			sourceTree = "<group>";
+		};
+		FEC600BC29ADE88C00995A16 /* Ergometer */ = {
+			isa = PBXGroup;
+			children = (
+				FEC600BD29ADE8A100995A16 /* ErgometerViewController.h */,
+				FEC600BE29ADE8A100995A16 /* ErgometerViewController.m */,
+			);
+			path = Ergometer;
+			sourceTree = "<group>";
+		};
+		FECC7BAE27BF38C700A2B0BC /* ToolUIAdapt */ = {
+			isa = PBXGroup;
+			children = (
+				FECC7BAF27BF38C700A2B0BC /* PYToolUIAdapt.h */,
+				FECC7BB027BF38C700A2B0BC /* PYToolUIAdapt.m */,
+			);
+			path = ToolUIAdapt;
+			sourceTree = "<group>";
+		};
+		FED0EAF32638161500EDAD93 /* BleFunctuon */ = {
+			isa = PBXGroup;
+			children = (
+				FED0EAF42638163900EDAD93 /* FunctionViewController.h */,
+				FED0EAF52638163900EDAD93 /* FunctionViewController.m */,
+			);
+			path = BleFunctuon;
+			sourceTree = "<group>";
+		};
+		FEDD20BB25A439C1007FF057 /* Power */ = {
+			isa = PBXGroup;
+			children = (
+				FEDD20BC25A439DF007FF057 /* PowerViewController.h */,
+				FEDD20BD25A439DF007FF057 /* PowerViewController.m */,
+			);
+			path = Power;
+			sourceTree = "<group>";
+		};
+		FEE23DF8290FA82F00FAB3A1 /* Icon */ = {
+			isa = PBXGroup;
+			children = (
+				FEE23E34290FA83C00FAB3A1 /* icon_20.png */,
+				FEE23E26290FA83B00FAB3A1 /* icon_20@2x.png */,
+				FEE23E23290FA83B00FAB3A1 /* icon_20@3x.png */,
+				FEE23E24290FA83B00FAB3A1 /* icon_29.png */,
+				FEE23E29290FA83B00FAB3A1 /* icon_29@2x.png */,
+				FEE23E25290FA83B00FAB3A1 /* icon_29@3x.png */,
+				FEE23E2B290FA83B00FAB3A1 /* icon_40.png */,
+				FEE23E37290FA83C00FAB3A1 /* icon_40@2x.png */,
+				FEE23E35290FA83C00FAB3A1 /* icon_40@3x.png */,
+				FEE23E2E290FA83B00FAB3A1 /* icon_57.png */,
+				FEE23E2C290FA83B00FAB3A1 /* icon_57@2x.png */,
+				FEE23E36290FA83C00FAB3A1 /* icon_57@3x.png */,
+				FEE23E2A290FA83B00FAB3A1 /* icon_60.png */,
+				FEE23E2F290FA83B00FAB3A1 /* icon_60@2x.png */,
+				FEE23E27290FA83B00FAB3A1 /* icon_60@3x.png */,
+				FEE23E32290FA83B00FAB3A1 /* icon_76.png */,
+				FEE23E30290FA83B00FAB3A1 /* icon_76@2x.png */,
+				FEE23E28290FA83B00FAB3A1 /* icon_167.png */,
+				FEE23E2D290FA83B00FAB3A1 /* icon_512.png */,
+				FEE23E31290FA83B00FAB3A1 /* icon_1024.png */,
+				FEE23E33290FA83C00FAB3A1 /* icon.png */,
+			);
+			path = Icon;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18EBF4711FA84E710024790B /* FitBleKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18EBF4881FA84E710024790B /* Build configuration list for PBXNativeTarget "FitBleKitDemo" */;
+			buildPhases = (
+				18EBF46E1FA84E710024790B /* Sources */,
+				18EBF46F1FA84E710024790B /* Frameworks */,
+				18EBF4701FA84E710024790B /* Resources */,
+				FE061E48272FDCD20089FB0F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FitBleKitDemo;
+			productName = FitBleKitDemo;
+			productReference = 18EBF4721FA84E710024790B /* FitBleKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18EBF46A1FA84E710024790B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1300;
+				ORGANIZATIONNAME = CS;
+				TargetAttributes = {
+					18EBF4711FA84E710024790B = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 18EBF46D1FA84E710024790B /* Build configuration list for PBXProject "FitBleKitDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18EBF4691FA84E710024790B;
+			productRefGroup = 18EBF4731FA84E710024790B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18EBF4711FA84E710024790B /* FitBleKitDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18EBF4701FA84E710024790B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEE23E4A290FA83C00FAB3A1 /* icon_40@3x.png in Resources */,
+				18BC844D1FBA9B8700B31BC3 /* img_app_back.png in Resources */,
+				FEE23E42290FA83C00FAB3A1 /* icon_512.png in Resources */,
+				FEE23E41290FA83C00FAB3A1 /* icon_57@2x.png in Resources */,
+				1818499B21EDCF0F00BFE66E /* img_choose.png in Resources */,
+				FEE23E3E290FA83C00FAB3A1 /* icon_29@2x.png in Resources */,
+				FEE23E3C290FA83C00FAB3A1 /* icon_60@3x.png in Resources */,
+				FEE23E3B290FA83C00FAB3A1 /* icon_20@2x.png in Resources */,
+				18EBF4821FA84E710024790B /* LaunchScreen.storyboard in Resources */,
+				FEE23E3D290FA83C00FAB3A1 /* icon_167.png in Resources */,
+				FEE23E44290FA83C00FAB3A1 /* icon_60@2x.png in Resources */,
+				FEE23E4B290FA83C00FAB3A1 /* icon_57@3x.png in Resources */,
+				18EBF47F1FA84E710024790B /* Assets.xcassets in Resources */,
+				FEE23E49290FA83C00FAB3A1 /* icon_20.png in Resources */,
+				18BC844F1FBA9BA900B31BC3 /* img_app_next.png in Resources */,
+				FEE23E47290FA83C00FAB3A1 /* icon_76.png in Resources */,
+				FE4E13F528B7787100D54B13 /* fight.png in Resources */,
+				FEE23E45290FA83C00FAB3A1 /* icon_76@2x.png in Resources */,
+				FEE23E40290FA83C00FAB3A1 /* icon_40.png in Resources */,
+				FEE23E46290FA83C00FAB3A1 /* icon_1024.png in Resources */,
+				FEE23E38290FA83C00FAB3A1 /* icon_20@3x.png in Resources */,
+				FEE23E3A290FA83C00FAB3A1 /* icon_29@3x.png in Resources */,
+				FEE23E39290FA83C00FAB3A1 /* icon_29.png in Resources */,
+				FEE23E48290FA83C00FAB3A1 /* icon.png in Resources */,
+				FEE23E3F290FA83C00FAB3A1 /* icon_60.png in Resources */,
+				FEE23E43290FA83C00FAB3A1 /* icon_57.png in Resources */,
+				18EBF47D1FA84E710024790B /* Main.storyboard in Resources */,
+				FEE23E4C290FA83C00FAB3A1 /* icon_40@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18EBF46E1FA84E710024790B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEC5417A269C3E4200180655 /* PPGFileViewController.m in Sources */,
+				FE413E4B28B4D7BF00C2B8E3 /* FightViewController.m in Sources */,
+				FEC600BF29ADE8A100995A16 /* ErgometerViewController.m in Sources */,
+				18BA1FAC1FC6C92D00144931 /* HeartRateViewController.m in Sources */,
+				18C058FB20C8D99800952955 /* BikeComputerViewController.m in Sources */,
+				FECC7BB127BF38C700A2B0BC /* PYToolUIAdapt.m in Sources */,
+				18AF933F20720C3C0022CDAF /* KettleBellViewController.m in Sources */,
+				185C7B562060EB0D001A7038 /* NewBandListViewController.m in Sources */,
+				FEC54177269BDAC300180655 /* PPGDFUViewController.m in Sources */,
+				FE4E13F128B76A0B00D54B13 /* PYToolString.m in Sources */,
+				FE053A61290D1FA5008AE1D3 /* HeartZoneView.m in Sources */,
+				18B142301FC2807D00D80C73 /* SkippingViewController.m in Sources */,
+				180E663E22617B6600C59786 /* BellListViewController.m in Sources */,
+				1884F69B1FC54C3C00D7C079 /* RosaryViewController.m in Sources */,
+				FEDD20BE25A439DF007FF057 /* PowerViewController.m in Sources */,
+				18B8373B234EDDB9002367C5 /* BroadcastingScaleViewController.m in Sources */,
+				18B1423D1FC2D34100D80C73 /* OldScaleViewController.m in Sources */,
+				FEA256B825B82E6E0026C4C1 /* ECGViewController.m in Sources */,
+				186DDE031FC03A61001EB095 /* NewScaleViewController.m in Sources */,
+				1884F6971FC54C2A00D7C079 /* HistoryViewController.m in Sources */,
+				181E5E06212A8F130062F58E /* HubParamViewController.m in Sources */,
+				18CE0ECC20EE09A1007BB754 /* WiFiListViewController.m in Sources */,
+				181E5E03212A55490062F58E /* Hub900ViewController.m in Sources */,
+				FECC7BAC27BF364C00A2B0BC /* FileEditViewController.m in Sources */,
+				FEA7C6A7265CF746000C945D /* RunningViewController.m in Sources */,
+				18A1E65C1FA8524100319641 /* AppDelegate.m in Sources */,
+				FE9806DC28B86EFA007ACF0C /* SandbagView.m in Sources */,
+				1818499821EC886300BFE66E /* DeviceClass.m in Sources */,
+				188914AF21C0DF2800913CA7 /* CFileOperate.m in Sources */,
+				FE4E13EE28B76A0B00D54B13 /* PYToolColor.m in Sources */,
+				181E5E09212AB4AB0062F58E /* HubListViewController.m in Sources */,
+				1865EC6D1FBBE71D00AB7585 /* BindDeviceViewController.m in Sources */,
+				18C63B1D20F5AF190098D8C8 /* SportListViewController.m in Sources */,
+				FECC7BAD27BF364C00A2B0BC /* ChooseTabView.m in Sources */,
+				18CE0EC920EDED88007BB754 /* HubConfigViewController.m in Sources */,
+				1884F6981FC54C2A00D7C079 /* SetViewController.m in Sources */,
+				1865EC6F1FBBE71D00AB7585 /* NewBandViewController.m in Sources */,
+				FED0EAF62638163900EDAD93 /* FunctionViewController.m in Sources */,
+				18EBF4851FA84E710024790B /* main.m in Sources */,
+				1865EC6E1FBBE71D00AB7585 /* ViewController.m in Sources */,
+				18C1E6E01FC42ADC00DC4C22 /* OldBandViewController.m in Sources */,
+				18B5B17A2175C6AA00821545 /* FistPowerViewController.m in Sources */,
+				186B3261233B37080070F9DF /* BaseViewController.m in Sources */,
+				18ADB86C206A24900010CBEE /* ArmBandViewController.m in Sources */,
+				180E663B22608D3A00C59786 /* ShowTools.m in Sources */,
+				18B142331FC2808F00D80C73 /* CadenceViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		18EBF47B1FA84E710024790B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18EBF47C1FA84E710024790B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18EBF4801FA84E710024790B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18EBF4811FA84E710024790B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18EBF4861FA84E710024790B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Shenzhen CooSpo Tech Co.,  Ltd.";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 862MG7F8RZ;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "a1c9ef98-d599-4bdd-b000-26d5ec92ea9c";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18EBF4871FA84E710024790B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Shenzhen CooSpo Tech Co.,  Ltd.";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 862MG7F8RZ;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "a1c9ef98-d599-4bdd-b000-26d5ec92ea9c";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18EBF4891FA84E710024790B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_IDENTITY = "Apple Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 4ESZKN9QNA;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 862MG7F8RZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FitBleKitDemo",
+				);
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "FitBleKitDemo/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 2.0.38.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CS.fitblekit;
+				PRODUCT_NAME = FitBleKit;
+				PROVISIONING_PROFILE = "e7489a30-38e9-489f-bd46-5b81cca8257c";
+				PROVISIONING_PROFILE_SPECIFIER = fitblekitHomeFile;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = CoospoAllDevFile;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18EBF48A1FA84E710024790B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_IDENTITY = "Apple Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 4ESZKN9QNA;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 862MG7F8RZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FitBleKitDemo",
+				);
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "FitBleKitDemo/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 2.0.38.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CS.fitblekit;
+				PRODUCT_NAME = FitBleKit;
+				PROVISIONING_PROFILE = "e7489a30-38e9-489f-bd46-5b81cca8257c";
+				PROVISIONING_PROFILE_SPECIFIER = fitblekitHomeFile;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = CoospoAllDevFile;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18EBF46D1FA84E710024790B /* Build configuration list for PBXProject "FitBleKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18EBF4861FA84E710024790B /* Debug */,
+				18EBF4871FA84E710024790B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18EBF4881FA84E710024790B /* Build configuration list for PBXNativeTarget "FitBleKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18EBF4891FA84E710024790B /* Debug */,
+				18EBF48A1FA84E710024790B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18EBF46A1FA84E710024790B /* Project object */;
+}

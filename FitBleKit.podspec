@@ -22,7 +22,7 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/onecoderSDK/FitBleKit.git", :tag => spec.version }
 
-  spec.vendored_frameworks = "FitBleKit.framework"
+  spec.vendored_frameworks = "FitBleKitDemo/FitBleKit.framework"
 
   spec.frameworks = "CoreBluetooth"
 

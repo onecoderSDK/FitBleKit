@@ -4,7 +4,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "FitBleKit"
 
-  spec.version      = "1.0.2"
+  spec.version      = "1.0.3"
 
   spec.summary      = "Onecoder Ble Framework."
 
@@ -22,13 +22,10 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/onecoderSDK/FitBleKit.git", :tag => spec.version }
 
-  spec.source_files = "FitBleKit/**/*.{h,m,c}"
-
-  spec.public_header_files = "FitBleKit/KitHeader/FitBleKit.h"
+  spec.vendored_frameworks = "FitBleKit.framework"
 
   spec.frameworks = "CoreBluetooth"
 
-  spec.pod_target_xcconfig = { 'VALID_ARCHS[sdk=iphonesimulator*]' => '' }
-
+  spec.pod_target_xcconfig = { "VALID_ARCHS" => "x86_64 armv7 arm64" }
 
 end

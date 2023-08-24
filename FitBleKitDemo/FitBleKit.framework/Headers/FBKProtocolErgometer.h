@@ -6,6 +6,19 @@
  ********************************************************************************/
 
 #import "FBKProtocolBase.h"
+#import "FBKProNTrackerAnalytical.h"
+#import "FBKErgometerCmd.h"
+
+typedef enum {
+    ErgResultRealTimeData = 0,
+    ErgResultEnterZero,
+    ErgResultZeroInfo,
+    ErgResultEnterCalibration,
+    ErgResultCalibrationInfo,
+    ErgResultSetFrequency,
+    ErgResultGetFrequency,
+    ErgResultInvalidCmd,
+} ErgometerResultNumber;
 
 @interface FBKProtocolErgometer : FBKProtocolBase
 

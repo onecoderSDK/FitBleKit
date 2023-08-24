@@ -100,7 +100,6 @@
 #define   ERG_WRITE_UUID             @"8FC3FC21-F21D-11E3-976C-0002A5D5C51B"// 测力计写入
 
 
-
 #import <Foundation/Foundation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
 #import "FBKEnumList.h"

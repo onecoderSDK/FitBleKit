@@ -141,5 +141,6 @@ FOUNDATION_EXPORT const unsigned char FCSDKVersionString[];
 
 // Protocol Api ERG
 #import "FBKProtocolErgometer.h"
+#import "FBKErgometerCmd.h"
 #import "FBKApiErgometer.h"
 

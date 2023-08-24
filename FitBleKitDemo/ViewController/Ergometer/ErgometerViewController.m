@@ -7,6 +7,7 @@
 
 #import "ErgometerViewController.h"
 #import "BindDeviceViewController.h"
+#import "PYToolUIAdapt.h"
 
 @interface ErgometerViewController ()<UITableViewDataSource, UITableViewDelegate, DeviceIdDelegate, FBKApiBsaeDataSource, FBKApiERGDelegate> {
     UITableView    *m_cmdTableView;     // 命令列表
@@ -17,6 +18,7 @@
     NSMutableArray *m_deviceList;       // 设备列表数据
     int            m_maxNumber;         // 选择的设备数（不超过7个）
     int            m_chooseNumber;      // 选择设备展示的数据
+    BOOL m_isShowReal;
 }
 
 @end
@@ -34,6 +36,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
+    m_isShowReal = true;
     m_maxNumber = 0;
     m_chooseNumber = 0;
     m_deviceList = [[NSMutableArray alloc] init];
@@ -51,6 +54,12 @@
     }
     
     m_cmdArray = [[NSMutableArray alloc] initWithObjects:
+                  @"Enter Zero Mode",
+                  @"Get Zero Info",
+                  @"Enter Calibration Mode",
+                  @"Get Calibration Info",
+                  @"Set Sampling Frequency",
+                  @"Get Sampling Frequency",
                   @"Device power",
                   @"Device firmware version",
                   @"Device hardware version",
@@ -153,6 +162,9 @@
     m_cmdTableView.dataSource = self;
     m_cmdTableView.backgroundColor = [UIColor clearColor];
     m_cmdTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    if (@available(iOS 15.0, *)) {
+        m_cmdTableView.sectionHeaderTopPadding = 0;
+    }
     [self.view addSubview:m_cmdTableView];
     
     m_content = [[UITextView alloc] initWithFrame:CGRectMake(0, 130+cmdTableHi, self.view.frame.size.width, self.view.frame.size.height-130-cmdTableHi)];
@@ -163,11 +175,23 @@
     [m_content setEditable:NO];
     [self.view addSubview:m_content];
     
+    UISwitch *openSwitch = [[UISwitch alloc] init];
+    openSwitch.frame = CGRectMake(self.view.frame.size.width-70.0, 135+cmdTableHi, 50, 30);
+    [[PYToolUIAdapt selfAlloc] setViewBorderWith:openSwitch cornerRadius:15 borderColor:[UIColor clearColor] borderWidth:0];
+    openSwitch.backgroundColor = [UIColor whiteColor];
+    openSwitch.onTintColor = [UIColor orangeColor];
+    openSwitch.on = m_isShowReal;
+    [openSwitch addTarget:self action:@selector(openSwitch:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:openSwitch];
+    
     m_deviceTableView = [[UITableView alloc]initWithFrame:CGRectMake(self.view.frame.size.width, 80, self.view.frame.size.width, self.view.frame.size.height-80)];
     m_deviceTableView.delegate = self;
     m_deviceTableView.dataSource = self;
     m_deviceTableView.backgroundColor = [UIColor whiteColor];
     m_deviceTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    if (@available(iOS 15.0, *)) {
+        m_deviceTableView.sectionHeaderTopPadding = 0;
+    }
     [self.view addSubview:m_deviceTableView];
 }
 
@@ -217,6 +241,17 @@
         bindView.delegate = self;
         [self.navigationController pushViewController:bindView animated:YES];
     }
+}
+
+
+/*-****************************************************************************************
+* Method: switchChoose
+* Description: switchChoose
+* Parameter:
+* Return Data:
+******************************************************************************************/
+- (void)openSwitch:(UISwitch *)sender {
+    m_isShowReal = sender.on;
 }
 
 
@@ -300,7 +335,7 @@
  * 返回数据：
  ********************************************************************************/
 - (void)bleConnectLog:(NSString *)logString andDevice:(id)bleDevice {
-//    NSLog(@"bleConnectLog --- %@",logString);
+    NSLog(@"bleConnectLog --- %@",logString);
 }
 
 
@@ -404,13 +439,80 @@
  * 输入参数：
  * 返回数据：
  ********************************************************************************/
-- (void)realTimeErg:(NSDictionary *)ergMap andDevice:(id)bleDevice{
+- (void)realTimeErg:(NSDictionary *)ergMap andDevice:(id)bleDevice {
+    if (m_isShowReal) {
+        FBKApiErgometer *ergApi = (FBKApiErgometer *)bleDevice;
+        DeviceClass *myBleDevice = [m_deviceList objectAtIndex:m_chooseNumber];
+        FBKApiErgometer *chooseApi = (FBKApiErgometer *)myBleDevice.bleDevice;
+        if (chooseApi == ergApi) {
+            m_content.text = [NSString stringWithFormat:@"Device ID: %@\n\nERG Data: %@",ergApi.deviceId,ergMap];
+        }
+    }
+}
+
+
+- (void)enterZeroResult:(BOOL)status andDevice:(id)bleDevice {
     FBKApiErgometer *ergApi = (FBKApiErgometer *)bleDevice;
     DeviceClass *myBleDevice = [m_deviceList objectAtIndex:m_chooseNumber];
     FBKApiErgometer *chooseApi = (FBKApiErgometer *)myBleDevice.bleDevice;
     if (chooseApi == ergApi) {
-//        NSLog(@"ergMap -- %@",ergMap);
-        m_content.text = [NSString stringWithFormat:@"Device ID: %@\n\nERG Data: %@",ergApi.deviceId,ergMap];
+        m_content.text = [NSString stringWithFormat:@"Device ID: %@\n\n enterZeroResult: %i",ergApi.deviceId,status];
+    }
+}
+
+- (void)zeroInfo:(NSDictionary *)infoMap andDevice:(id)bleDevice {
+    FBKApiErgometer *ergApi = (FBKApiErgometer *)bleDevice;
+    DeviceClass *myBleDevice = [m_deviceList objectAtIndex:m_chooseNumber];
+    FBKApiErgometer *chooseApi = (FBKApiErgometer *)myBleDevice.bleDevice;
+    if (chooseApi == ergApi) {
+        m_content.text = [NSString stringWithFormat:@"Device ID: %@\n\n zeroInfo: %@",ergApi.deviceId,infoMap];
+    }
+}
+
+- (void)enterCalibrationResult:(BOOL)status andDevice:(id)bleDevice{
+    FBKApiErgometer *ergApi = (FBKApiErgometer *)bleDevice;
+    DeviceClass *myBleDevice = [m_deviceList objectAtIndex:m_chooseNumber];
+    FBKApiErgometer *chooseApi = (FBKApiErgometer *)myBleDevice.bleDevice;
+    if (chooseApi == ergApi) {
+        m_content.text = [NSString stringWithFormat:@"Device ID: %@\n\n enterCalibrationResult: %i",ergApi.deviceId,status];
+    }
+}
+
+- (void)calibrationInfo:(NSDictionary *)infoMap andDevice:(id)bleDevice {
+    FBKApiErgometer *ergApi = (FBKApiErgometer *)bleDevice;
+    DeviceClass *myBleDevice = [m_deviceList objectAtIndex:m_chooseNumber];
+    FBKApiErgometer *chooseApi = (FBKApiErgometer *)myBleDevice.bleDevice;
+    if (chooseApi == ergApi) {
+        m_content.text = [NSString stringWithFormat:@"Device ID: %@\n\n calibrationInfo: %@",ergApi.deviceId,infoMap];
+    }
+}
+
+
+- (void)setFrequencyResult:(BOOL)status andDevice:(id)bleDevice {
+    FBKApiErgometer *ergApi = (FBKApiErgometer *)bleDevice;
+    DeviceClass *myBleDevice = [m_deviceList objectAtIndex:m_chooseNumber];
+    FBKApiErgometer *chooseApi = (FBKApiErgometer *)myBleDevice.bleDevice;
+    if (chooseApi == ergApi) {
+        m_content.text = [NSString stringWithFormat:@"Device ID: %@\n\n setFrequencyResult: %i",ergApi.deviceId,status];
+    }
+}
+
+- (void)samplingFrequency:(int)frequency andDevice:(id)bleDevice{
+    FBKApiErgometer *ergApi = (FBKApiErgometer *)bleDevice;
+    DeviceClass *myBleDevice = [m_deviceList objectAtIndex:m_chooseNumber];
+    FBKApiErgometer *chooseApi = (FBKApiErgometer *)myBleDevice.bleDevice;
+    if (chooseApi == ergApi) {
+        m_content.text = [NSString stringWithFormat:@"Device ID: %@\n\n samplingFrequency: %i",ergApi.deviceId,frequency];
+    }
+}
+
+
+- (void)invalidCmd:(ErgometerCmdNumber)cmdId andDevice:(id)bleDevice {
+    FBKApiErgometer *ergApi = (FBKApiErgometer *)bleDevice;
+    DeviceClass *myBleDevice = [m_deviceList objectAtIndex:m_chooseNumber];
+    FBKApiErgometer *chooseApi = (FBKApiErgometer *)myBleDevice.bleDevice;
+    if (chooseApi == ergApi) {
+        m_content.text = [NSString stringWithFormat:@"Device ID: %@\n\n invalidCmd: %i",ergApi.deviceId,cmdId];
     }
 }
 
@@ -488,7 +590,7 @@
  * 返回数据：
  ********************************************************************************/
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *cellString = @"SkippingCell";
+    static NSString *cellString = @"ErgometerCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellString];
     if (cell == nil) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellString];
@@ -572,28 +674,93 @@
         FBKApiErgometer *ergApi = (FBKApiErgometer *)myBleDevice.bleDevice;
         if (ergApi.isConnected) {
             if (myRow == 0) {
-                [ergApi readDevicePower];
+                [ergApi enterZeroMode];
             }
             else if (myRow == 1) {
-                [ergApi readFirmwareVersion];
+                [ergApi getZeroInfo];
             }
             else if (myRow == 2) {
-                [ergApi readHardwareVersion];
+                [ergApi enterCalibrationMode];
             }
             else if (myRow == 3) {
-                [ergApi readSoftwareVersion];
+                [ergApi getCalibrationInfo];
             }
             else if (myRow == 4) {
-                [ergApi getPrivateMacAddress];
+                [self setFrequencyNo];
             }
             else if (myRow == 5) {
-                [ergApi getPrivateVersion];
+                [ergApi getSamplingFrequency];
             }
             else if (myRow == 6) {
-                [ergApi enterOTAMode];
+                [ergApi readDevicePower];
+            }
+            else if (myRow == 7) {
+                [ergApi readFirmwareVersion];
+            }
+            else if (myRow == 8) {
+                [ergApi readHardwareVersion];
+            }
+            else if (myRow == 9) {
+                [ergApi readSoftwareVersion];
+            }
+            else if (myRow == 10) {
+                [ergApi getPrivateMacAddress];
+            }
+            else if (myRow == 11) {
+                [ergApi getPrivateVersion];
+            }
+            else if (myRow == 12) {
+                [self enterOtaMode];
             }
         }
     }
+}
+
+
+/*-******************************************************************************
+* 方法名称：setFrequencyNo
+* 功能描述：
+* 输入参数：
+* 返回数据：
+********************************************************************************/
+- (void)setFrequencyNo {
+    NSString *alertString = @"Set Sampling Frequency";
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:alertString message:nil preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"Done" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        UITextField *inputField = alertController.textFields.firstObject;
+        NSString *valueString = inputField.text;
+        
+        DeviceClass *myBleDevice = [self->m_deviceList objectAtIndex:self->m_chooseNumber];
+        FBKApiErgometer *ergApi = (FBKApiErgometer *)myBleDevice.bleDevice;
+        [ergApi setSamplingFrequency:[valueString intValue]];
+    }];
+    [alertController addAction:cancelAction];
+    [alertController addAction:okAction];
+    [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+    }];
+    [self presentViewController:alertController animated:YES completion:nil];
+}
+
+
+/*-******************************************************************************
+* 方法名称：enterOtaMode
+* 功能描述：enterOtaMode
+* 输入参数：
+* 返回数据：
+********************************************************************************/
+- (void)enterOtaMode {
+    NSString *alertString = @"Enter OTA Mode";
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:alertString message:nil preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"Done" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        DeviceClass *myBleDevice = [self->m_deviceList objectAtIndex:self->m_chooseNumber];
+        FBKApiErgometer *ergApi = (FBKApiErgometer *)myBleDevice.bleDevice;
+        [ergApi enterOTAMode];
+    }];
+    [alertController addAction:cancelAction];
+    [alertController addAction:okAction];
+    [self presentViewController:alertController animated:YES completion:nil];
 }
 
 

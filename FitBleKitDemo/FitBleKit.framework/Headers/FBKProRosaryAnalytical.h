@@ -37,7 +37,7 @@ typedef enum{
 @property(assign,nonatomic)id <FBKProRosaryAnalyticalDelegate> delegate;
 
 // 获取到蓝牙回复的数据
-- (void)receiveBlueData:(NSString *)hexString;
+- (void)receiveBlueData:(NSData *)hexData;
 
 // 获取到蓝牙回复的数据中断
 - (void)receiveBlueDataError;

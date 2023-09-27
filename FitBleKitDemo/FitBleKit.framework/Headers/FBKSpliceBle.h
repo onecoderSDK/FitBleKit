@@ -43,7 +43,7 @@
 + (NSString *)analyticalDeviceId:(NSData *)byteData;
 
 // 加密
-+ (NSString *)encryptionString:(NSString *)cmdString withKey:(int)key;
++ (NSData *)encryptionString:(NSData *)valueData withKey:(int)key;
 
 + (BOOL)compareUuid:(CBUUID *)bleUuid withUuid:(NSString *)uuidString;
 

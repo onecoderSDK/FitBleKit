@@ -22,10 +22,10 @@ typedef enum{
 
 @property(assign,nonatomic)id <FBKPowerAnalyDelegate> delegate;
 
-- (void)receiveRealTimeData:(NSString *)hexString;
+- (void)receiveRealTimeData:(NSData *)valueData;
 
-- (void)receiveBlueData:(NSString *)hexString;
+- (void)receiveBlueData:(NSData *)valueData;
 
-- (void)receiveZeroData:(NSString *)hexString;
+- (void)receiveZeroData:(NSData *)valueData;
 
 @end
